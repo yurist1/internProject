@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+
+    >
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="검색하기"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginTop="30dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="부서위치와 사용부서로 검색하기"
+        android:layout_marginTop="50dp"
+        android:gravity="center"/>
+
+
+
+        <LinearLayout
+            android:layout_width="241dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="#f9f9ff">
+
+            <AutoCompleteTextView
+                android:id="@+id/search_dept_center"
+                android:layout_width="242dp"
+                android:layout_height="wrap_content"
+                android:completionHint="pick an item"
+                android:completionThreshold="1"
+                android:hint="부서위치"
+                android:imeOptions="actionNext"
+                android:inputType="text" />
+
+            <AutoCompleteTextView
+                android:id="@+id/search_dept_user"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:completionHint="pick an item"
+                android:completionThreshold="1"
+                android:hint="사용부서"
+                android:imeOptions="actionDone"
+                android:inputType="text" />
+            <Button
+                android:id="@+id/search_by_dept"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="검색" />
+        </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="모델명으로 검색하기"
+        android:layout_marginTop="50dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="#f9f9ff"    >
+            <AutoCompleteTextView
+                android:id="@+id/equip_model"
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:completionHint="pick an item"
+                android:completionThreshold="1"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:hint="모델명" />
+        <Button
+            android:id="@+id/search_by_model"
+            android:layout_width="237dp"
+            android:layout_height="match_parent"
+            android:text="검색" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="47dp"
+        android:layout_height="33dp"
+        app:srcCompat="@drawable/neozensoft_symbolmark"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="새 기기 등록"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_height="420dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        >
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="부서위치: " />
+            <EditText
+                android:id="@+id/insert_dept_center"
+                android:layout_width="127dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="자산관리코드: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <EditText
+                android:id="@+id/insert_equip_code"
+                android:layout_width="127dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:inputType="text"
+                android:imeOptions="actionNext"/>
+
+            <Button
+                android:id="@+id/insert_check_equip_code"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="중복확인" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_gravity="left"
+                android:text="사용부서: " />
+            <EditText
+                android:id="@+id/insert_dept_user"
+                android:layout_width="127dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:inputType="text"
+                android:imeOptions="actionNext" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="기기위치: " />
+            <EditText
+                android:id="@+id/insert_equip_pos"
+                android:layout_width="127dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:inputType="text"
+                android:imeOptions="actionNext" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="기기명: " />
+            <EditText
+                android:id="@+id/insert_equip_nm"
+                android:layout_width="127dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="모델명: " />
+            <EditText
+                android:id="@+id/insert_equip_model"
+                android:layout_width="127dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="기기한글명: " />
+            <EditText
+                android:id="@+id/insert_equip_kr_nm"
+                android:layout_width="127dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="제조원: " />
+
+            <EditText
+                android:id="@+id/insert_equip_producer"
+                android:layout_width="127dp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/insert_btn"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:text="등록" />
+
+        <Button
+            android:id="@+id/insert_close_btn"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:text="닫기" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

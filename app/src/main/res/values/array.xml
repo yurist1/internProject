@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="equip_type">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>L</item>
+        <item>P</item>
+    </string-array>
+
+    <string-array name="wd_result">
+        <item>PACS</item>
+        <item>검토필요</item>
+        <item>연동가능</item>
+        <item>연동불가</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/detail_info_equip_nm"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:gravity="end"
+            android:textStyle="bold"
+            android:textColor="#012542"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#012542"
+            android:layout_marginRight="5dp"/>
+        <TextView
+            android:id="@+id/detail_info_device_model"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textColor="#9fb5c6"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="326dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="0.94">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:gravity="end"
+                    android:text="사 용 부 서: " />
+
+                <TextView
+                    android:id="@+id/detail_dept_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:gravity="end"
+                    android:text="위 치 부 서: " />
+
+                <TextView
+                    android:id="@+id/detail_equip_pos"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:gravity="end"
+                    android:text="실 사 여 부: " />
+
+                <TextView
+                    android:id="@+id/detail_wd_as_is"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:gravity="end"
+                    android:text="현재 연동여부 : " />
+
+                <TextView
+                    android:id="@+id/detail_as_is"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:gravity="end"
+                    android:text="차세대 연동여부 : " />
+
+                <TextView
+                    android:id="@+id/detail_to_be"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:gravity="end"
+                    android:text="OPTION: " />
+
+                <TextView
+                    android:id="@+id/detail_equip_option"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:gravity="end"
+                    android:text="TYPE: " />
+
+                <TextView
+                    android:id="@+id/detail_equip_type"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:gravity="end"
+                    android:text="실 사 결 과: " />
+
+                <TextView
+                    android:id="@+id/detail_wd_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:gravity="end"
+                    android:text="제 조 사: " />
+                <TextView
+                    android:id="@+id/detail_producer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:gravity="end"
+                        android:text="판매업체담당자: " />
+
+                    <TextView
+                        android:id="@+id/detail_prod_mgr_nm"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:gravity="end"
+                            android:text="판매업체담당자 \n_연락처:" />
+
+                        <TextView
+                            android:id="@+id/detail_prod_mgr_phoneno"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:gravity="end"
+                            android:text="부서 담당자: " />
+
+                        <TextView
+                            android:id="@+id/detail_dept_mgr_nm"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:gravity="end"
+                            android:text="부서 담당자\n _연락처: " />
+
+                        <TextView
+                            android:id="@+id/detail_dept_mgr_phoneno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_marginLeft="20dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:gravity="end"
+                            android:text="비   고 : " />
+
+                        <TextView
+                            android:id="@+id/detail_remark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                    </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.47"
+            android:text="수정" />
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="삭제"
+            android:layout_weight="0.55" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/closeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="닫기" />
+
+</LinearLayout>

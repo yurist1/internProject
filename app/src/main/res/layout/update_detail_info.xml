@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/detail_info_equip_nm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_weight="0.60"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:textColor="#01579b"
+            android:layout_marginRight="5dp"/>
+        <TextView
+            android:id="@+id/detail_info_device_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_weight="0.60"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textColor="#01579b"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="0.88">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="사용부서: "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:id="@+id/update_detail_dept_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="위치부서: "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:id="@+id/update_detail_equip_pos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="실사여부: "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_wd_as_is"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_wd_as_is_O"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O" />
+
+                    <RadioButton
+                        android:id="@+id/radio_wd_as_is_X"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="X" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/update_detail_wd_as_is"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="현재연동여부: "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_as_is"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_as_is_O"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O" />
+
+                    <RadioButton
+                        android:id="@+id/radio_as_is_X"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="X" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/update_detail_as_is"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="차세대연동여부 : "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_to_be"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_to_be_O"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O" />
+
+                    <RadioButton
+                        android:id="@+id/radio_to_be_X"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="X" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/update_detail_to_be"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="OPTION: "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_wd_option_O"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O" />
+
+                    <RadioButton
+                        android:id="@+id/radio_wd_option_X"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="X" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/update_detail_equip_option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="TYPE: "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <Spinner
+                    android:id="@+id/spinner_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/equip_type" />
+
+                <EditText
+                    android:id="@+id/update_detail_equip_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="실사결과 : "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <Spinner
+                    android:id="@+id/spinner_wd_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/equip_type" />
+
+                <EditText
+                    android:id="@+id/update_detail_wd_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="제조사: "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <EditText
+                    android:id="@+id/update_detail_producer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="판매업체담당자: "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <EditText
+                    android:id="@+id/update_detail_prod_mgr_nm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="54dp"
+                    android:gravity="end"
+                    android:text="판매업체담당자\n _연락처: "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <EditText
+                    android:id="@+id/update_detail_prod_mgr_phoneno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="부서담당자: "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <EditText
+                    android:id="@+id/update_detail_dept_mgr_nm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="54dp"
+                    android:gravity="end"
+                    android:text="부서담당자\n _연락처: "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <EditText
+                    android:id="@+id/update_detail_dept_mgr_phoneno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="비고 : "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <EditText
+                    android:id="@+id/update_detail_remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/update_new_info_Btn"
+            android:layout_height="wrap_content"
+            android:layout_width="190dp"
+            android:text="수정"
+            />
+
+        <Button
+            android:id="@+id/update_closeBtn"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:text="닫기" />
+    </LinearLayout>
+
+
+</LinearLayout>

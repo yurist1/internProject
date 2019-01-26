@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content"
+    style="@style/AppTheme.NoActionBar"
+    android:background="@android:color/background_light"
+   >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="47dp"
+        android:layout_height="33dp"
+        app:srcCompat="@drawable/neozensoft_symbolmark"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"/>
+
+    <FrameLayout
+        android:id="@+id/maincontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            >
+            <TableRow
+                android:background="#cfe7f9">
+                <TextView
+                    android:id="@+id/order_dept_pos"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="부서위치" />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="의료기기명" />
+                <TextView
+                    android:id="@+id/order_equip_model"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="모델명" />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="AS_IS" />
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="TO_BE" />
+                <TextView
+                    android:id="@+id/order_wd_as_is"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="실사유무" />
+            </TableRow>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/listAll_recycler"
+                android:layout_width="wrap_content"
+                android:layout_height="456dp"/>
+
+        </TableLayout>
+        </HorizontalScrollView>
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>
+

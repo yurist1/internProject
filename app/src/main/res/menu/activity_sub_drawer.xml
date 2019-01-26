@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu1"
+            android:icon="@mipmap/internet"
+            android:title="전체보기"/>
+        <item
+            android:id="@+id/nav_menu2"
+            android:icon="@mipmap/magnifier"
+            android:title="검색하기"/>
+        <item
+            android:id="@+id/nav_menu3"
+            android:icon="@mipmap/networking"
+            android:title="새 기기 등록"/>
+        <item
+            android:id="@+id/nav_menu4"
+            android:icon="@mipmap/cloud"
+            android:title="데이터 전송"/>
+    </group>
+
+
+</menu>
